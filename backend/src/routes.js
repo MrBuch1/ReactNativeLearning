@@ -21,7 +21,7 @@ const routes = express.Router();
   * 
   * Query Params: Parâmetros nomeados enviados na rota após  "?" (Filtros, paginação)
   * Route Params: Parâmetros utilizados para identificar recursos
-  * Request Body: 
+  * Request Body: Corpo da requisição, utilizado para criar ou alterar recursos
   */
 
   routes.post('/sessions', SessionController.create);
@@ -35,4 +35,4 @@ const routes = express.Router();
   routes.post('/incidents', IncidentController.create);
   routes.delete('/incidents/:id', IncidentController.delete);
 
-module.exports = routes;
+module.exports = routes; /*Exportando o código de routes.js para ser acessado por outro arquivo */

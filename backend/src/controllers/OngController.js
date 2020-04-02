@@ -1,7 +1,7 @@
 const crypto = require('crypto');
 const connection = require('../database/connection');
 
-
+/**'module.exports' serve para exportar o código do arquivo em que está sendo usado para ser acessado por outro arquivo. */
 module.exports = {
     async index(request, response) {
         
